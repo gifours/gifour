@@ -26,6 +26,22 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <link href="css/darkmode.css" rel="stylesheet" />
+
+      <!-- vidio style -->
+    <style>video::-webkit-media-controls {
+      display: none !important;
+    }
+    </style>
+    
+    <script>
+    //For Firefox we have to handle it in JavaScript 
+    var vids = $("video"); 
+    $.each(vids, function(){
+           this.controls = false; 
+    }); 
+    //Loop though all Video tags and set Controls as false
+    </script>
+  
 </head>
 
 <body>
